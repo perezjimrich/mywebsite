@@ -1,0 +1,220 @@
+
+.navbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(54, 4, 148, 0.61);
+    border-radius: 7px;
+    gap: 1rem;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+.navbars a {
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: monospace;
+}
+.navbars a:hover {
+    color: rgb(255, 0, 0);
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("image/asusjif.gif");
+     background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box1 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex; 
+    padding: .5%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+.box2 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex; 
+    padding: .5%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+.box3 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex; 
+    padding: .5%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+.box4 {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex; 
+    padding: .5%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+#me {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 1%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+#me2 {
+        display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 3px;
+    margin-left: 7%;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+    box-shadow: 
+    0 0 5px rgb(255, 0, 128),
+    0 0 15px rgb(255, 0, 128),
+    0 0 30px rgba(255, 0, 128, 0.986);
+
+    border: 2px solid rgba(255, 0, 128, 0.705);
+    border-radius: 10px;
+    max-width: 80%;
+    background: rgba(0, 0, 0, 0.651);
+}
+#me3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 3px;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.box {
+    width: 250px;
+    min-height: 280px;
+    background-color: rgba(0, 0, 0, 0.575);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 
+    0 0 5px rgb(255, 0, 128),
+    0 0 15px rgb(255, 0, 128),
+    0 0 30px rgba(255, 0, 128, 0.986);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 1, 1);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .navbars {
+        gap: 1rem;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .navbars a {
+        font-size: 18px;
+    }
+
+    #me {
+        font-size: 24px;
+        padding-top: 2%;
+    }
+
+    #me2 {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 0;
+        margin-top: 1%;
+        max-width: 90%;
+    }
+
+    #me3 {
+        font-size: 24px;
+        margin-top: 1%;
+    }
+
+    .boxes {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 250px;
+        margin: 5px;
+        padding: 15px;
+        font-size: medium;
+    }
+}
+
+/* Additional responsive design for very small devices */
+@media (max-width: 480px) {
+    .navbars {
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .navbars a {
+        font-size: 16px;
+    }
+
+    #me {
+        font-size: 20px;
+        padding-top: 1%;
+    }
+
+    #me2 {
+        font-size: 16px;
+        padding: 8px;
+        margin-left: 0;
+        margin-top: 1%;
+        max-width: 95%;
+    }
+
+    #me3 {
+        font-size: 20px;
+        margin-top: 1%;
+    }
+
+    .boxes {
+        gap: 5px;
+        padding: 5px 0;
+    }
+
+    .box {
+        width: 95%;
+        margin: 5px auto;
+        padding: 10px;
+        font-size: small;
+        min-height: auto;
+    }
+}
